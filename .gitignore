@@ -1,0 +1,8 @@
+node_modules/
+zcode-spark-config.json
+zcode-spark.log
+ZCodeSpark.ico
+coverage/
+*.tmp
+.mimosa/
+run.lock

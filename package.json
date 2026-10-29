@@ -1,0 +1,20 @@
+{
+  "name": "zcode-spark",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ZCode Spark — ZCode 桌面版提示词工作台：多动作改写、快捷键、多步撤销",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node controller.mjs",
+    "attach": "node controller.mjs --attach",
+    "doctor": "node controller.mjs --doctor",
+    "install:local": "node install.mjs",
+    "test": "node test/unit.mjs && node test/e2e-inject.mjs",
+    "test:unit": "node test/unit.mjs",
+    "test:e2e": "node test/e2e-inject.mjs"
+  },
+  "license": "MIT"
+}

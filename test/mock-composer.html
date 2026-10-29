@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>ZCode Spark mock composer</title>
+<style>
+  html, body { height: 100%; margin: 0; font: 14px/1.5 system-ui, sans-serif; background: #fff; color: #1f2328; }
+  #spacer { height: 70vh; padding: 16px; box-sizing: border-box; color: #888; }
+  .composer {
+    position: fixed; left: 0; right: 0; bottom: 0; padding: 12px;
+    border-top: 1px solid #dcdcdc; background: #fafafa;
+  }
+  .row { display: flex; align-items: flex-end; gap: 8px; }
+  .row button { height: 30px; padding: 0 10px; }
+  .input {
+    flex: 1 1 auto; min-height: 56px; max-height: 180px; overflow: auto;
+    padding: 8px 10px; border: 1px solid #c9c9c9; border-radius: 8px;
+    background: #fff; white-space: pre-wrap; outline: none;
+  }
+</style>
+</head>
+<body>
+  <div id="spacer">模拟 ZCode 页面主体（测试用，不含真实 ZCode 代码）</div>
+  <div data-testid="v4-composer" class="composer">
+    <div class="row">
+      <button type="button" data-testid="chat-mode-select-trigger">Agent</button>
+      <button type="button" data-testid="chat-model-select-trigger">DemoProvider/demo-small</button>
+      <div class="input" data-testid="v4-composer-input" contenteditable="true"></div>
+      <button type="button" data-testid="chat-send-button">Send</button>
+    </div>
+  </div>
+</body>
+</html>
